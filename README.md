@@ -55,7 +55,7 @@ $ venv\Scripts\activate      # Windows
 $ source venv/bin/activate    # macOS/Linux
 
 # 3. Install dependencies
-$ pip install -r requirements.txt
+$ pip install chainlit google-generativeai python-dotenv
 ```
 
 ### 🔐 Add Environment Key
@@ -66,7 +66,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 ### ▶️ Run the App
 ```bash
-chainlit run main_chainlit.py
+chainlit run main.py
 ```
 
 ---
@@ -75,8 +75,7 @@ chainlit run main_chainlit.py
 ```bash
 ai-travel-agent/
 ├── .env                         # Gemini API Key
-├── main_chainlit.py             # Core logic and UI
-├── requirements.txt             # Required libraries
+├── main.py             # Core logic and UI
 ├── travel_agents/
 │   ├── destination_agent.py     # Suggests destination
 │   ├── booking_agent.py         # Simulated flights & hotels
@@ -94,16 +93,6 @@ I want a romantic vacation in nature 🌿
 I need a beach with good food 🌊🍱
 Show me a peaceful mountain escape 🏔️
 ```
-
----
-
-## 📈 Future Ideas
-- Add budget & date filters
-- Integrate with real APIs (e.g., Skyscanner, Expedia)
-- Export trip as downloadable PDF
-- Add voice input or WhatsApp chatbot interface
-
----
 
 ## 🙋‍♀️ Created By
 Javeria Fatima — 💖 Crafted with creativity, logic, and wanderlust!
